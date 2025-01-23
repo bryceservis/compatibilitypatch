@@ -7,6 +7,7 @@ To build this module,
 ```bash
 checkmodule -m -o requiredmod.mod requiredmod.te
 semodule_package -o requiredmod.pp -m requiredmod.mod
-semodule -i requiredmod.pp```
+semodule -i requiredmod.pp
+```
 
 Please keep in mind that you should always audit and ensure that the modules you're installing on your system are doing what they say they are.
