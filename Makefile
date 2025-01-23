@@ -2,11 +2,11 @@ SHELL = /bin/bash
 export PATH := bin:${PATH}
 
 all:
-	checkmodule -m -o compatability.mod compatability.te
-	semodule_package -o compatability.pp -m compatability.mod
+	checkmodule -m -o compatibility.mod compatibility.te
+	semodule_package -o compatibility.pp -m compatibility.mod
 
 install:
-	semodule -i compatability.pp
+	semodule -i compatibility.pp
 
 clean:
-	rm compatability.pp compatability.mod
+	rm compatibility.pp compatibility.mod
