@@ -1,13 +1,10 @@
-# Required Module for Security-Enhanced Linux on Gentoo Linux (hardened-systemd)
-This module is a very disorganized set of essential allowances to do very basic and necessary things like login, let systemd run properly, and not kill the init.
+# A Compatability Module for Security-Enhanced Gentoo Linux (systemd)
+This module is designed to patch many issues that typically arise during standard usage of Security-Enhanced Gentoo Linux (systemd).
 
-This module is specifically tailored to my system and may work on yours, but don't expect it to work perfectly on your system without some edits.
+## Building
+To build this compatability module, use Make.
 
-To build this module,
 ```bash
-checkmodule -m -o requiredmod.mod requiredmod.te
-semodule_package -o requiredmod.pp -m requiredmod.mod
-semodule -i requiredmod.pp
+sudo make
+sudo make install
 ```
-
-Please keep in mind that you should always audit and ensure that the modules you're installing on your system are doing what they say they are.
