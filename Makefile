@@ -7,3 +7,6 @@ all:
 
 install:
 	semodule -i compatability.pp
+
+clean:
+	rm compatability.pp compatability.mod
