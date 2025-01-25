@@ -1,4 +1,4 @@
-module compatability 1.0;
+module compatibility 1.0;
 
 require {
 	type devpts_t;
